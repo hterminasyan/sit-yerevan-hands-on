@@ -41,7 +41,7 @@ Of course, you will also receive a user for SAP Business Technology Platform in 
 
 1. There are a few tool options that we have in order to walk you through this session and the takeways that we want to tackle. It could either be the Cloud Foundry CLI or SAP BTP CLI (either on your machine's command line or in SAP Business Application Studio) or the SAP BTP Cockpit. We try to keep the tools used and the potential hurdles at a minimum in order to focus on the key aspects - understanding and getting familiar with the architecture - of the extension application. That's why we are going to use the SAP BTP Cockpit throughout this session.
 
-   👉 Open the SAP BTP Cockpit: <https://cockpit.eu10.hana.ondemand.com/cockpit/?idp=saptfe.accounts.ondemand.com#/globalaccount/4c28a87c-ca19-45be-b884-ec6a6b3a1226/subaccount/99308111-bf08-42c2-b263-01d25429c556>
+   👉 Open the SAP BTP Cockpit: <https://emea.cockpit.btp.cloud.sap/cockpit/?idp=saptfe.accounts.ondemand.com#/globalaccount/4c28a87c-ca19-45be-b884-ec6a6b3a1226/subaccount/99308111-bf08-42c2-b263-01d25429c556>
 
    👉 Enter your SAP BTP account credentials:
 
@@ -50,11 +50,11 @@ Of course, you will also receive a user for SAP Business Technology Platform in 
 
   ![SAP BTP Logon screen](./images/btp_logon.png)
 
-2. This page will be needed throughout this whole session and we'll further reference this page as **SAP BTP subaccount overview**.
+1. This page will be needed throughout this whole session and we'll further reference this page as **SAP BTP subaccount overview**.
 
    👉 Bookmark this page as in your browser so you can easily come back later on.
 
-3. Let's have a look at a few menu items to prove that you have all the required Role Collections assigned.
+2. Let's have a look at a few menu items to prove that you have all the required Role Collections assigned.
 
    👉 Go to **Services > Instances & Subscriptions**. You should see a list with service instances and subscriptions that your instructor(s) have created beforehand. If you have issues seeing this list, please reach out to one of the instructors.
 
@@ -64,7 +64,7 @@ Of course, you will also receive a user for SAP Business Technology Platform in 
 
    ![BTP instances & subscriptions menu item](./images/instances_subs_overview.png)
 
-4. 👉 Go back to the subaccount **Overview** menu where you'll find lots of information about the subaccount itself. Among other things, in the Cloud Foundry Environment section, you should see an organization and a **dev** space there.
+3. 👉 Go back to the subaccount **Overview** menu where you'll find lots of information about the subaccount itself. Among other things, in the Cloud Foundry Environment section, you should see an organization and a **dev** space there.
 
    ![Go to Cloud Foundry space by clicking on the dev space name](./images/go_to_cfspace.png)
 
