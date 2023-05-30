@@ -29,7 +29,7 @@ The _source system_ for our extension application is an SAP S/4HANA on-premise s
 
 1. 👉 Open the "Maintain Business Partner" application.
 
-   ![Open the Maintain Business Partner application in the btpcon group](./images/open-fiori-app.png)
+   ![Open the Maintain Business Partner application in the group](./images/open-fiori-app.png)
 
    You will see the SAP Fiori application for the transaction (BP) to maintain business partners:
 

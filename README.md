@@ -1,8 +1,8 @@
-# BTPcon - Hands-On workshop
+# SAP Inside Track Yerevan - Hands-On workshop
 
 ## Description
 
-This repository contains the tutorials for the Hands-On workshop for BTPcon.
+This repository contains the tutorials for the Hands-On workshop for SAP Inside Track Yerevan.
 
 ## Overview
 
@@ -14,7 +14,7 @@ The Discovery Center Mission [_Enhance core ERP business processes with resilien
 
 ## Requirements
 
-There are no requirements for this session other than a browser (preferrably Google Chrome). Unfortunately, since the entire environment is already prepared for attendees including the SAP S/4HANA on premise system, these exercises can only be done on-site at BTPcon.
+There are no requirements for this session other than a browser (preferrably Google Chrome). Unfortunately, since the entire environment is already prepared for attendees including the SAP S/4HANA on premise system, these exercises can only be done on-site at SAP Inside Track Yerevan.
 
 ## Procedure
 
