@@ -8,7 +8,7 @@ This repository contains the tutorials for the Hands-On workshop for SAP Inside 
 
 This session introduces attendees to the general concepts of building extensions for SAP systems (like SAP S/4HANA, SAP SuccessFactors and the like) with the help of SAP Business Technology Platform (SAP BTP). Instead of building our own extension app, we will take a different approach in this advanced session: Understanding an app that already exists and is running, diving into the most important aspects of such an app and setting the foundation for more complex scenarios.
 
-The Discovery Center Mission [_Enhance core ERP business processes with resilient applications on SAP BTP_](https://discovery-center.cloud.sap/missiondetail/3501/3542/) serves as the foundation for this session. This session will cover the foundation of its architecture.
+[_Enhance core ERP business processes with resilient applications on SAP BTP_](https://github.com/SAP-samples/btp-build-resilient-apps) serves as the foundation for this session. This session will cover the foundation of its architecture.
 
 ![Highlevel Architecture](exercises/ex1/images/highlevel-arch.png)
 

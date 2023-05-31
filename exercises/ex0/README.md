@@ -22,7 +22,7 @@ The _source system_ for our extension application is an SAP S/4HANA on-premise s
 2. 👉 Enter the following credentials:
 
 - Client: 100
-- User: S4H*0\<STUDENT> (**IMPORTANT:** \<STUDENT> is the student number on your desk. In case you have received *01\*, please use S4H_001 as the user for the SAP S/4HANA system. \**Remember that there are three digits after the *S4H\*\* even though your student number doesn't have 3 digits - please use leading zeros, for instance S4H_001\*\*.
+- User: S4H_0\<STUDENT> (**IMPORTANT:** \<STUDENT> is the student number on your desk. In case you have received *01\*, please use S4H_001 as the user for the SAP S/4HANA system. \**Remember that there are three digits after the *S4H\*\* even though your student number doesn't have 3 digits - please use leading zeros, for instance S4H_001\*\*.
 - Password: as provided by your instructor
 
 > Recommended: Bookmark this page in your browser
