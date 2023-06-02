@@ -15,14 +15,14 @@ The CAP compiler takes the CDS files and, as the tools already says, compiles th
 
 Some of the tables (like StatusValues) receive static values from CSV files, the other tables (Verifications, Addresses) are filled once the event handlers that you have seen in the previous exercises process incoming events from SAP S/4HANA via SAP Event Mesh. Additionally, CAP produces tables for [draft handling](https://help.sap.com/docs/ABAP_PLATFORM_NEW/468a97775123488ab3345a0c48cadd8f/ed9aa41c563a44b18701529c8327db4d.html?version=202110.000&locale=en-US) based on the [corresponding annotation in the CDS files](https://github.com/SAP-samples/btp-build-resilient-apps/blob/main/srv/admin.cds#L6).
 
-Since the CAP application is already deployed, you should see those artifacts in SAP HANA Cloud already. If you remember seeing the applications **BPVerification-db-<STUDENT>-deployer** in the list of applications in your dev space on SAP BTP, all in **Stopped** status, that's where the artifact deployment happened.
+Since the CAP application is already deployed, you should see those artifacts in SAP HANA Cloud already. If you remember seeing the applications **BPVerification-db-\<STUDENT>-deployer** in the list of applications in your dev space on SAP BTP, all in **Stopped** status, that's where the artifact deployment happened.
 
-1. 👉 In order to find out the **schema** for your particular application, navigate to **Services > Instances and Subscriptions**.
-2. 👉 Search for your **BPVerification-db-<STUDENT>-deployer** and click on the **bindings** column to display the service credentials.
+1. 👉 In order to find out the db **credentials** for your particular application, navigate to **Services > Instances and Subscriptions**.
+2. 👉 Search for your **BPVerification-db-\<STUDENT>** and click on the **bindings** column to display the service credentials.
 
    ![Open the SAP HANA Database Explorer](images/bindings.png)
 
-3. 👉 Note down the schema information that you'll need in the subsequent exercise.
+3. 👉 Note down the **user** and **password** information that you'll need in the subsequent exercise.
 
    ![Open the SAP HANA Database Explorer](images/schema_information.png)
 
@@ -44,22 +44,15 @@ There are different administration tools for SAP HANA Cloud. It could be the [Da
 
    ![Open the SAP HANA Database Explorer](images/open_in_dbexplorer.png)
 
-   👉 Your instructor has already created a connection to the database with an admin user that has access to all schemas. Enter the following credentials:
+   👉 Enter the credentials (user, password) from the previous step.
 
-   **User:** DBADMIN
-   **Password:** ask your instructor for this password in case you don't have it yet
-
-   > **IMPORTANT: Please do not use this user for other purposes. Thank you!**
+   ![Open the SAP HANA Database Explorer](images/db-credentials.png)
 
 ## Exercise 4.3 Find the tables of the extension application
 
-If you double-click on the **tables** item you will see data for all database schemas. Let's narrow that down to your schema:
-
-1. 👉 Double-click the tables item and open the schema selection.
+1. 👉 Double-click on the **tables** item and you will see the database tables and data for your database schema. 
 
    ![Open the SAP HANA Database Explorer](images/schema_selection.png)
-
-2. 👉 Filter for the schema that you have noted down.
 
    - **TFE_MODEL_BPVERIFICATION_ADDRESSES**: One of the entities defined in the data model of the CAP application. (concatenated with the namespace that is defined in the first line of the CDS file)
    - **TFE_MODEL_BPVERIFICATION_STATUSVALUES**: One of the entities defined in the data model of the CAP application. (concatenated with the namespace that is defined in the first line of the CDS file)
@@ -68,7 +61,7 @@ If you double-click on the **tables** item you will see data for all database sc
    - **TFE_SERVICE_BUSINESSPARTNERVALIDATION_ADMINSERVICE_BUSINESSPARTNERVERIFICATION_DRAFTS**: Automatically generated table for Draft-Handling (naming: namespace + service name + entity + \_DRAFTS)
    - **TFE_SERVICE_BUSINESSPARTNERVALIDATION_ADMINSERVICE_ADDRESSES_DRAFTS**: Automatically generated table for Draft-Handling, since it's part of the Composition with the parent entity (naming: namespace + service name + entity + \_DRAFTS)
 
-3. 👉 Double-click the **Views** item and make yourself familiar with the individual Views. By selecting one of the Views, the Column information will appear on the right. Basically all the entities have a corresponding View, since they are exposed via the _AdminService_ (Source Code: <https://github.com/SAP-samples/btp-build-resilient-apps/blob/main/srv/admin.cds#L38-L39> and <https://github.com/SAP-samples/btp-build-resilient-apps/blob/main/srv/admin.cds#L7-L18>)
+2. 👉 Double-click the **Views** item and make yourself familiar with the individual Views. By selecting one of the Views, the Column information will appear on the right. Basically all the entities have a corresponding View, since they are exposed via the _AdminService_ (Source Code: <https://github.com/SAP-samples/btp-build-resilient-apps/blob/main/srv/admin.cds#L38-L39> and <https://github.com/SAP-samples/btp-build-resilient-apps/blob/main/srv/admin.cds#L7-L18>)
 
 ## Exercise 4.4 Change a business partner and check the updates in SAP S/4HANA and the HDI Container (extension field vs. S/4HANA fields)
 
